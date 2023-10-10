@@ -1,0 +1,117 @@
+:root {
+    --skills-text-color1: #1c3e53;
+    --skills-text-color2: #8f8fa3;
+    --skills-card-background: #282a63;
+    --skills-card-icon-color: #5aade5;
+    --skills-card-text1: #f1f3fe;
+    --skills-card-text2: #9b9cd7;
+    --skills-card-text3: #71abe4;
+}
+
+[data-theme='dark'] {
+    --skills-text-color1: #51b1f2;
+    --skills-text-color2: #8f8fa3;
+    --skills-card-background: #282a63;
+    --skills-card-icon-color: #5aade5;
+    --skills-card-text1: #f1f3fe;
+    --skills-card-text2: #9b9cd7;
+    --skills-card-text3: #71abe4;
+}
+
+
+.skills-section {
+    background-color: var(--nav-background);
+    padding-top: 100px;
+}
+
+.skills-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills-heading h5 {
+    font-size: 15px;
+    color: var(--skills-text-color2);
+}
+
+.skills-heading h2 {
+    font-size: 30px;
+    color: var(--skills-text-color1);
+}
+
+.skills-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.skills-card {
+    background-color: var(--skills-card-background);
+    width: 600px;
+    padding: 30px 40px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.skills-card:hover{
+    transform:translateY(-10px);
+}
+
+.skill-card-items-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skill-card-heading {
+    text-align: center;
+    color: var(--skills-card-text3);
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+@media (max-width:1400px) {
+    .skills-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:725px) {
+    .skill-card-items-section {
+        grid-template-columns: 1fr ;
+    }
+    .skills-card {
+        width: 100%;
+        padding: 30px 10px;
+        border-radius: 30px;
+    }
+    .skills-content{
+        width: 100%;
+        padding:0 10%;
+    }
+}
+
+.skill-card-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.skill-card-item-content {
+    margin-left: 10px;
+}
+
+.skill-card-item-content h4 {
+    color: var(--skills-card-text1);
+}
+
+.skill-card-item-content p {
+    color: var(--skills-card-text2);
+    margin-top: 5px;
+}
